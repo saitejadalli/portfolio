@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saiteja Dalli | Data Analytics Portfolio</title>
+<meta name="description" content="Portfolio of Saiteja Dalli: five data analytics projects covering churn, sales, sport, student performance and AI-assisted analysis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,400..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <a class="mark" href="#top">Saiteja Dalli</a>
+  <nav aria-label="Main">
+    <a href="#about">Bio</a>
+    <a href="#value">Value</a>
+    <a href="#artifacts">Artifacts</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- HERO: drawing sheet with title block -->
+<section class="hero" id="top">
+  <div class="sheet">
+    <div class="hero-copy">
+      <h1>I turn raw rows into decisions, and show my working.</h1>
+      <p class="lede">Data analytics student and practitioner. I clean the data, build formula-driven Excel models, test what AI tools tell me, and write recommendations a manager can act on.</p>
+      <p class="hero-links"><a class="btn" href="#artifacts">See the five projects</a><a class="textlink" href="#about">Read my bio</a></p>
+    </div>
+    <table class="titleblock" aria-label="About at a glance">
+      <tbody>
+        <tr><th>Name</th><td>Saiteja Dalli</td></tr>
+        <tr><th>Focus</th><td>Data analytics</td></tr>
+        <tr><th>Tools</th><td>Excel, AI-assisted analysis, PowerPoint</td></tr>
+        <tr><th>Datasets</th><td>Telecom, retail sales, cricket, education</td></tr>
+        <tr><th>Projects</th><td>Five, listed below</td></tr>
+        <tr><th>Contact</th><td class="open">saiteja.dalli@myemail.indwes.edu</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- BIO -->
+<section class="block" id="about">
+  <div class="wrap two">
+    <h2>Professional bio</h2>
+    <div class="prose">
+      <p>I am Saiteja Dalli, and I am working in data analytics. My work so far is a set of Excel-based projects on real datasets: a telecom company losing customers, a year of retail sales, two decades of one-day international cricket, and the factors behind student exam scores.</p>
+      <p>In each one I follow the same routine. I check the data for missing values, duplicates and impossible entries. I build the analysis with live formulas so every number can be traced. Then I write down what the data shows, what it cannot show, and what I would do next.</p>
+      <p>I also pay attention to how analysis is done responsibly. My sales and student projects include sections on data quality, ethics and honest reporting, and I have compared my own spreadsheet work with AI-assisted analysis to find where each can be trusted.</p>
+      <p>I am aiming for a data analyst role where I can turn business data into clear, tested recommendations, and keep building my skills with larger datasets and more advanced tools.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VALUE PROPOSITION -->
+<section class="block alt" id="value">
+  <div class="wrap two">
+    <h2>Personal value proposition</h2>
+    <div>
+      <p class="statement">I check the data first, show my working, and say clearly what the numbers cannot tell you.</p>
+      <dl class="vp">
+        <div><dt>Data checked before it is used</dt><dd>Every project starts with data quality checks: duplicates, blanks, impossible values. I document what I changed and why, so someone else can repeat my work.</dd></div>
+        <div><dt>Transparent, auditable work</dt><dd>My workbooks use live formulas rather than pasted numbers. A reviewer can click any figure and see where it came from.</dd></div>
+        <div><dt>Findings that lead to action</dt><dd>I finish with recommendations that say what to do, how to measure success and how urgent it is, not just charts.</dd></div>
+        <div><dt>Honest about limits</dt><dd>I separate correlation from cause, flag small samples, and say when a dataset cannot answer the question. Decision makers can trust a report that does this.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ARTIFACTS -->
+<section class="block" id="artifacts">
+  <div class="wrap">
+    <h2>Artifacts</h2>
+    <p class="intro">Five projects, each laid out the same way so you can compare them quickly: what the problem was, how I worked, what I used, and why it matters to an employer.</p>
+
+    <table class="register">
+      <caption class="sr">Index of artifacts</caption>
+      <thead><tr><th scope="col">Sheet</th><th scope="col">Title</th><th scope="col">Main tool</th><th scope="col">Headline result</th></tr></thead>
+      <tbody>
+        <tr><td>A1</td><td><a href="#a1">Telco customer churn</a></td><td>Excel</td><td>30.5% of monthly revenue lost to churn</td></tr>
+        <tr><td>A2</td><td><a href="#a2">Sales data interpretation</a></td><td>Excel</td><td>Discount size has almost no effect on order value</td></tr>
+        <tr><td>A3</td><td><a href="#a3">Cricket analytics dashboard</a></td><td>Excel</td><td>2,379 matches and 4,701 innings summarised</td></tr>
+        <tr><td>A4</td><td><a href="#a4">Student performance factors</a></td><td>Excel</td><td>Attendance has the strongest link to scores (r = 0.58)</td></tr>
+        <tr><td>A5</td><td><a href="#a5">Spreadsheet vs AI-assisted analysis</a></td><td>Excel, generative AI</td><td>AI suggests and explains; the workbook validates</td></tr>
+      </tbody>
+    </table>
+
+    <!-- A1 -->
+    <article class="artifact" id="a1">
+      <header><span class="sheetno">A1</span><h3>Telco customer churn: where the revenue leaks</h3></header>
+      <div class="fields">
+        <section><h4>Introduction</h4><p>A telecom company loses customers every month, and each lost customer is lost recurring revenue. This project asks which customers leave, and how much it costs.</p></section>
+        <section><h4>Description</h4><p>An Excel analysis of the IBM Telco Customer Churn dataset from Kaggle: 7,043 customers and 21 columns. Of these, 1,869 customers churned (26.5%), taking $139,131 of the $456,117 monthly revenue with them (30.5%). Churned customers also paid more on average ($74.44 against $61.27).</p></section>
+        <section><h4>Objective</h4><p>Find the customer segments with the highest churn and put a dollar figure on a realistic retention target.</p></section>
+        <section><h4>Tools and technologies used</h4><ul class="chips"><li>Microsoft Excel</li><li>COUNTIFS / SUMIFS</li><li>Data cleaning</li><li>Scenario modelling</li><li>Kaggle dataset</li></ul></section>
+        <section class="wide"><h4>Process</h4>
+          <ol>
+            <li>Kept the original data untouched in a Raw_Data sheet and worked on a separate Clean_Data copy.</li>
+            <li>Checked for duplicate customer IDs (none) and blank cells. Only TotalCharges had gaps: 11 customers with zero tenure, none of whom churned. These were set to 0 and the column converted from text to numbers.</li>
+            <li>Added helper columns with formulas: churn flag, tenure band and monthly-charge band.</li>
+            <li>Built segment tables with COUNTIFS and SUMIFS for contract, tenure, internet service, payment method, monthly charge, tech support and senior status.</li>
+            <li>Modelled a scenario: if 15% of month-to-month churners were retained, the saving is about $18,127 a month, or $217,525 a year. The 15% is a labelled assumption that anyone can change.</li>
+            <li>Turned the findings into charts and a presentation.</li>
+          </ol>
+        </section>
+        <figure class="wide" data-chart="churnContract"></figure>
+        <figure class="wide" data-chart="churnTenure"></figure>
+        <section class="vp-box wide">
+          <h4>Value proposition</h4>
+          <div class="vp-grid">
+            <div><h5>Unique value</h5><p>The retention scenario keeps its assumption visible and editable, so a manager can test their own numbers instead of trusting mine. Cleaning decisions are written down in a README sheet.</p></div>
+            <div><h5>Relevance</h5><p>Subscription and service businesses live on recurring customers. The same method of segmenting, costing and testing a target applies to telecoms, utilities, software and banking.</p></div>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <!-- A2 -->
+    <article class="artifact" id="a2">
+      <header><span class="sheetno">A2</span><h3>Sales data interpretation: findings and decisions</h3></header>
+      <div class="fields">
+        <section><h4>Introduction</h4><p>Raw sales rows do not tell a manager what to do. This project turns 1,000 transactions into three answers: what the trends are, how customers behave, and how each market segment performs.</p></section>
+        <section><h4>Description</h4><p>A workbook built on a year of sales (1 Jan 2023 to 1 Jan 2024): 4 regions, 4 product categories and 5 sales reps. Total revenue was 5.02 million at an estimated 14.3% gross margin and an average discount of 15.2%. Revenue was flat all year, with a soft third quarter and a stronger fourth.</p></section>
+        <section><h4>Objective</h4><p>Interpret the data and recommend decisions: where to protect margin, where to grow, and what to stop doing.</p></section>
+        <section><h4>Tools and technologies used</h4><ul class="chips"><li>Microsoft Excel</li><li>SUMIFS / COUNTIFS / AVERAGEIFS</li><li>EDATE date logic</li><li>Excel charts</li><li>Data quality audit</li></ul></section>
+        <section class="wide"><h4>Process</h4>
+          <ol>
+            <li>Ran data quality checks: no missing values, no duplicates, no unit price below unit cost.</li>
+            <li>Found a problem in the source: Sales_Amount does not reconcile to quantity × unit price (correlation −0.03). I used Sales_Amount as recorded revenue and said so.</li>
+            <li>Built monthly, quarterly, segment, customer and discount tables with live SUMIFS, COUNTIFS and AVERAGEIFS formulas.</li>
+            <li>Tested whether discounting pays off by grouping orders into 5-point discount bands.</li>
+            <li>Wrote seven recommendations, each with evidence, an action, a success measure and a priority.</li>
+            <li>Added an ethics section covering honest reporting, fair treatment of customers and data privacy.</li>
+          </ol>
+        </section>
+        <figure class="wide" data-chart="salesMargin"></figure>
+        <figure class="wide" data-chart="salesDiscount"></figure>
+        <section class="vp-box wide">
+          <h4>Value proposition</h4>
+          <div class="vp-grid">
+            <div><h5>Unique value</h5><p>I reported what the data could not support as clearly as what it could. Segment gaps were small, so recommendations are framed as things to test, and the broken Sales_Amount field is flagged for fixing.</p></div>
+            <div><h5>Relevance</h5><p>Employers need analysts who protect margin, not only count revenue. The recommendation table format (evidence, action, measure, priority) is ready to drop into a management meeting.</p></div>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <!-- A3 -->
+    <article class="artifact" id="a3">
+      <header><span class="sheetno">A3</span><h3>Cricket analytics: ODI men's matches, 2002–2023</h3></header>
+      <div class="fields">
+        <section><h4>Introduction</h4><p>Selection committees choose players from performance, but ball-by-ball files are far too large to read. This project condenses two decades of one-day international cricket into a dashboard.</p></section>
+        <section><h4>Description</h4><p>An Excel dashboard built from Kaggle ball-by-ball and match files covering 2,379 matches, 4,701 team innings and about 1.06 million runs. It has six charts, player batting and bowling tables, team and season summaries, and a written strategic recommendation.</p></section>
+        <section><h4>Objective</h4><p>Show who scores, who takes wickets, which teams win, and what that means for choosing a side.</p></section>
+        <section><h4>Tools and technologies used</h4><ul class="chips"><li>Microsoft Excel</li><li>Dashboard design</li><li>Excel charts</li><li>Large-dataset aggregation</li><li>Kaggle dataset</li></ul></section>
+        <section class="wide"><h4>Process</h4>
+          <ol>
+            <li>Aggregated ball-by-ball deliveries into innings, batting, bowling, team and season tables.</li>
+            <li>Defined the measures clearly: strike rate as runs per 100 balls, economy as runs per six legal balls, and bowler wickets excluding run outs.</li>
+            <li>Built chart-ready tables on a separate sheet that drive six dashboard charts.</li>
+            <li>Added a sheet of the Excel functions used, with example formulas.</li>
+            <li>Wrote a summary with recommendations and cautions, such as validating rankings by minimum matches before selecting players.</li>
+          </ol>
+        </section>
+        <figure class="wide" data-chart="cricketRuns"></figure>
+        <figure class="wide" data-chart="cricketWins"></figure>
+        <section class="vp-box wide">
+          <h4>Value proposition</h4>
+          <div class="vp-grid">
+            <div><h5>Unique value</h5><p>The recommendation holds back from over-claiming. India has the most aggregate runs, but total runs alone do not prove the best win rate, and the toss winner won only 47.5% of matches.</p></div>
+            <div><h5>Relevance</h5><p>Turning very large records into one readable page is the same skill needed for transaction logs, customer histories or operations data in any workplace.</p></div>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <!-- A4 -->
+    <article class="artifact" id="a4">
+      <header><span class="sheetno">A4</span><h3>Student performance factors: the Insight Fusion workbook</h3></header>
+      <div class="fields">
+        <section><h4>Introduction</h4><p>Which habits and circumstances go with higher exam scores? This workbook explores that question using 6,606 student records.</p></section>
+        <section><h4>Description</h4><p>An Excel workbook on the Student Performance Factors dataset, with exam score as the outcome. It has 9 worksheet columns, including a derived attendance band, and uses correlation, regression, group averages and an attendance by parental involvement comparison. Scores range from 55 to 100 (mean 67.23, median 67, standard deviation 3.87).</p></section>
+        <section><h4>Objective</h4><p>Find which factors have the strongest association with exam scores, and whether parental involvement shows a consistent pattern.</p></section>
+        <section><h4>Tools and technologies used</h4><ul class="chips"><li>Microsoft Excel</li><li>CORREL and regression</li><li>Group averages</li><li>Derived categories</li></ul></section>
+        <section class="wide"><h4>Process</h4>
+          <ol>
+            <li>Read the 6,606 rows and 9 columns and checked quality: 0 missing cells and 0 duplicate rows.</li>
+            <li>Removed one impossible score of 101 before analysis, and noted it as a cleaning decision to document.</li>
+            <li>Created an attendance band column (60–70, 71–80, 81–90, 91–100).</li>
+            <li>Calculated correlations with exam score: attendance r = 0.582 (R² ≈ 0.339, about 34% of variation in this sample) and hours studied r = 0.447.</li>
+            <li>Compared group means across the attendance bands, then across parental involvement within each band.</li>
+          </ol>
+        </section>
+        <figure class="wide" data-chart="studentBands"></figure>
+        <figure class="wide" data-chart="studentHeat"></figure>
+        <section class="vp-box wide">
+          <h4>Value proposition</h4>
+          <div class="vp-grid">
+            <div><h5>Unique value</h5><p>I went beyond a single correlation. Within every attendance band, high parental involvement had the highest mean score, and average attendance was similar across involvement groups (about 80%), so attendance does not explain the involvement gap, although unmeasured differences may remain.</p></div>
+            <div><h5>Relevance</h5><p>Schools and education programmes decide where to put support based on findings like these. Showing which factor matters most, with the caveat that association is not cause, is what they need to prioritise.</p></div>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <!-- A5 -->
+    <article class="artifact" id="a5">
+      <header><span class="sheetno">A5</span><h3>Spreadsheet vs AI-assisted analysis</h3></header>
+      <div class="fields">
+        <section><h4>Introduction</h4><p>Generative AI can explore a dataset in seconds, but can its answers be trusted? This project puts AI-assisted analysis up against my own Excel workbook on the same data.</p></section>
+        <section><h4>Description</h4><p>A presentation (Assignment 6.4) that re-examines the student performance data with AI. It audits the data, recomputes the statistics independently, and compares the two approaches task by task.</p></section>
+        <section><h4>Objective</h4><p>Decide how spreadsheets and AI should be used together, and what must be verified before relying on either.</p></section>
+        <section><h4>Tools and technologies used</h4><ul class="chips"><li>Generative AI</li><li>Microsoft Excel</li><li>Independent recalculation</li><li>PowerPoint</li></ul></section>
+        <section class="wide"><h4>Process</h4>
+          <ol>
+            <li>Independently inspected the Data sheet, counted nulls and duplicate rows, and recomputed the descriptive statistics.</li>
+            <li>Produced a score distribution, a correlation chart, attendance band means and a grouped heatmap from the file.</li>
+            <li>Compared the workbook and AI review across calculations, visualisation, strengths and risks (summarised below).</li>
+            <li>Reflected on conclusions, ethics and responsible use, including student privacy, bias and representativeness.</li>
+          </ol>
+        </section>
+        <section class="wide">
+          <h4>What I found when I compared them</h4>
+          <table class="cmp">
+            <thead><tr><th scope="col">Task</th><th scope="col">Excel workbook</th><th scope="col">AI-assisted review</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Strength</th><td>Transparent formulas and a repeatable layout.</td><td>Natural-language questions, fast exploration and accessible explanations.</td></tr>
+              <tr><th scope="row">Risk</th><td>Formula ranges, labels or assumptions can be wrong if not checked.</td><td>May misread columns, overstate a pattern or produce incorrect code or interpretation.</td></tr>
+              <tr><th scope="row">Best approach</th><td>Keep formulas and data cleaning documented.</td><td>Use AI to suggest analysis, then validate against the workbook.</td></tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="vp-box wide">
+          <h4>Value proposition</h4>
+          <div class="vp-grid">
+            <div><h5>Unique value</h5><p>I treat AI as a second analyst whose work must be checked. My practice is to save prompts, rerun calculations, document cleaning choices and compare AI output to independently computed statistics.</p></div>
+            <div><h5>Relevance</h5><p>Employers are adopting AI tools now. They need analysts who can use them quickly and still catch a misread column, an overstated pattern or an unexplained deletion.</p></div>
+          </div>
+        </section>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="block alt" id="contact">
+  <div class="wrap two">
+    <h2>Contact</h2>
+    <div>
+      <p class="statement">Hiring for a data analyst, or want to talk about any of these projects? Get in touch.</p>
+      <p><a class="btn" id="emailBtn" href="mailto:saiteja.dalli@myemail.indwes.edu">saiteja.dalli@myemail.indwes.edu</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot"><span>Saiteja Dalli, data analytics portfolio</span><span id="year"></span></footer>
+
+<script src="main.js"></script>
+</body>
+</html>
