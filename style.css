@@ -118,3 +118,16 @@ figcaption small{display:block;font-weight:400;color:var(--ink-2);margin-top:.15
 .cmp tbody th{font-weight:700;width:9rem}
 .titleblock td.open{overflow-wrap:anywhere;font-size:.85rem}
 @media (max-width:760px){.cmp tbody th{width:auto}}
+
+.tl{list-style:none;padding:0;margin:0;max-width:48rem;border-left:3px solid var(--blue)}
+.tl li{display:grid;grid-template-columns:6rem 1fr;gap:.8rem;padding:.35rem 0 .35rem 1rem;margin:0;position:relative}
+.tl li::before{content:"";position:absolute;left:-8px;top:.95rem;width:13px;height:13px;border-radius:50%;background:var(--paper);border:3px solid var(--blue)}
+.tl b{font-family:var(--sans);font-weight:700}
+@media (max-width:760px){.tl li{grid-template-columns:1fr;gap:0}}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem 1.5rem}
+.three h5{padding-top:.5rem;border-top:3px solid var(--blue)}
+.three p{font-size:.97rem;color:var(--ink-2)}
+.tl li.winter::before{background:var(--yellow);border-color:var(--ink)}
+.tl li.winter b{background:var(--yellow);color:#10202F;padding:0 .35rem;justify-self:start}
+.src{margin:0;padding-left:1.2rem}.src li{margin-bottom:.3rem}
+@media (max-width:760px){.three{grid-template-columns:1fr}}
