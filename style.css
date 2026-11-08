@@ -131,3 +131,34 @@ figcaption small{display:block;font-weight:400;color:var(--ink-2);margin-top:.15
 .tl li.winter b{background:var(--yellow);color:#10202F;padding:0 .35rem;justify-self:start}
 .src{margin:0;padding-left:1.2rem}.src li{margin-bottom:.3rem}
 @media (max-width:760px){.three{grid-template-columns:1fr}}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.stats div{border-top:3px solid var(--blue);padding-top:.5rem}
+.stats b{display:block;font:800 1.7rem/1.1 var(--sans);font-stretch:112%}
+.stats span{font:500 .88rem var(--sans);color:var(--ink-2)}
+.cmp{width:100%;border-collapse:collapse;font-size:.97rem}
+.cmp th,.cmp td{padding:.6rem .8rem;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+.cmp thead th{border-bottom:2px solid var(--ink);font-size:.85rem;color:var(--ink-2)}
+.cmp tbody th{font-weight:700;width:9rem}
+.skgrid{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem 2rem}
+.skgrid h5{padding-top:.5rem;border-top:3px solid var(--blue)}
+figure svg{width:100%;max-width:34rem;height:auto;display:block}
+figcaption{font:600 .9rem var(--sans);margin-bottom:.6rem}
+figcaption small{display:block;font-weight:400;color:var(--ink-2);margin-top:.15rem}
+.c-label{font:500 13px var(--sans);fill:var(--ink)}
+.c-val{font:700 13px var(--sans);fill:var(--ink)}
+.c-bar{fill:var(--blue-soft)}.c-hi{fill:var(--blue)}
+.c-axis{stroke:var(--ink);stroke-width:1}
+.c-cell-t{font:600 13px var(--sans)}
+.fields>figure{padding:1.3rem 1.4rem;border-bottom:1px solid var(--rule);margin:0}
+@media (max-width:760px){.stats,.skgrid{grid-template-columns:1fr 1fr}.cmp tbody th{width:auto}.skgrid{grid-template-columns:1fr}}
+.fields{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.fields>*{min-width:0}
+.cmp th,.cmp td{overflow-wrap:anywhere}
+@media (max-width:760px){.fields{grid-template-columns:minmax(0,1fr)}.cmp{font-size:.9rem}.cmp th,.cmp td{padding:.5rem .4rem}.stats{grid-template-columns:1fr 1fr}}
+
+.gap{margin-top:1.2rem}
+.cmp td{width:auto}
+.cmp .total th,.cmp .total td{font-weight:800;border-top:2px solid var(--ink)}
+.after{margin-top:1rem!important}
+.fields .wide>p{margin-bottom:.9rem}
